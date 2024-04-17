@@ -7,9 +7,9 @@ from typing import ClassVar
 @dataclass
 class Note:
     code: int
-    text : str
-    importance : str
-    HIGH: ClassVar[str]= "HIGH"
+    text: str
+    importance: str
+    HIGH: ClassVar[str] = "HIGH"
     MEDIUM: ClassVar[str] = "MEDIUM"
     LOW:  ClassVar[str] = "LOW"
     tags: list[str] = field(init=False, default_factory=list)
